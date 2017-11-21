@@ -1,0 +1,5 @@
+/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/CSharpFundamentals/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/CSharpFundamentals/bin/Debug/CSharpFundamentals.pdb
+/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/CSharpFundamentals/bin/Debug/CSharpFundamentals.exe
+/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/CSharpFundamentals/obj/Debug/CSharpFundamentals.exe
+/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/CSharpFundamentals/obj/Debug/CSharpFundamentals.pdb
