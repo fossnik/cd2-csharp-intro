@@ -1,8 +1,11 @@
-﻿namespace CSharpFundamentals64
+﻿using System;
+using System.Collections.Generic;
+
+namespace CSharpFundamentals64
 {
     public class StringUtility
     {
-        static string SummerizeText(string text, int maxLength = 20)
+        public static string SummerizeText(string text, int maxLength = 20)
         {
             if (text.Length < maxLength)
             {
@@ -23,6 +26,8 @@
                     break;
                 }
             }
+
+            return String.Join(" ", summaryWords) + "...";
         }
     }
 }
