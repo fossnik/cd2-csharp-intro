@@ -15,11 +15,11 @@ namespace CSharpFundamentals_s9
 
             if (File.Exists( path ))
             {
-                Console.WriteLine( "{1} exists!", path );
+                Console.WriteLine( "{0} exists!", path );
             }
             else
             {
-                Console.WriteLine( "{1} does not exist!", path );
+                Console.WriteLine( "{0} does not exist!", path );
             }
 
             var content = File.ReadAllText( path );
