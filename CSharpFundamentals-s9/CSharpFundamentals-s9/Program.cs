@@ -11,10 +11,12 @@ namespace CSharpFundamentals_s9
             // string literal is in this instance superflous
             Directory.CreateDirectory(@"/tmp/folder1");
 
-            var files = Directory.GetFiles(@"/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/");
-            foreach (var file in files)
+            var directories = Directory.GetDirectories(@"/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/",
+                "*.*",
+                SearchOption.AllDirectories);
+            foreach (var dir in directories)
             {
-                Console.WriteLine(file);
+                Console.WriteLine(dir);
             }
         }
     }
