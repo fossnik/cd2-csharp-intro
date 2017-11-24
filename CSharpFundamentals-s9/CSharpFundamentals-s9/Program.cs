@@ -25,7 +25,7 @@ namespace CSharpFundamentals_s9
             var content = File.ReadAllText( path );
             
             var fileInfo = new FileInfo( path );
-            fileInfo.CopyTo("/dev/null");
+            fileInfo.CopyTo( "/dev/null" );
             
             // takes no parameters
             fileInfo.Delete();
@@ -33,10 +33,9 @@ namespace CSharpFundamentals_s9
             if (fileInfo.Exists)
             {
                 Console.WriteLine( @"fileInfo exists!
-note that fileInfo does not have a 'read all text' method
+note that fileInfo lacks the ReadAllText() method
 
-note the verbatim-string usage here
-" );
+note the verbatim-string usage here" );
             }
         }
     }
