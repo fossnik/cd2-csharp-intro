@@ -8,15 +8,35 @@ namespace CSharpFundamentals_s9
     {
         public static void Main(string[] args)
         {
-            var path = "/home/seth/careerDevs-i/RiderProjects/CSharpFundamentals/HelloWorld/HelloWorld.sln";
+            var path = @"/tmp/Providence-Rhode-Island.jpg";
+            
+            File.Copy( @"/tmp/Providence-Rhode-Island.jpg", @"/tmp/copy-Providence-Rhode-Island.jpg", true );
+            File.Delete( path );
 
-            var dotIndex = path.IndexOf('.');
-            var extension = path.Substring(dotIndex);
+            if (File.Exists( path ))
+            {
+                Console.WriteLine( "{0} exists!", path );
+            }
+            else
+            {
+                Console.WriteLine( "{0} does not exist!", path );
+            }
 
-            Console.WriteLine("Extension     \t" + Path.GetExtension(path));
-            Console.WriteLine("File Name     \t" + Path.GetFileName(path));
-            Console.WriteLine("Sans Extension\t" + Path.GetFileNameWithoutExtension(path));
-            Console.WriteLine("Directory Name\t" + Path.GetDirectoryName(path));
+            var content = File.ReadAllText( path );
+            
+            var fileInfo = new FileInfo( path );
+            fileInfo.CopyTo( "/dev/null" );
+            
+            // takes no parameters
+            fileInfo.Delete();
+
+            if (fileInfo.Exists)
+            {
+                Console.WriteLine( @"fileInfo exists!
+note that fileInfo lacks the ReadAllText() method
+
+note the verbatim-string usage here" );
+            }
         }
     }
 }
